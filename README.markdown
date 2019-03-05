@@ -18,12 +18,21 @@ Documentation
 
 In order to use the class, just use this initializer:
 
-    -(EDSunriseSet)initWithDate:(NSDate*)date timezone:(NSTimeZone*)timezone latitude:(double)latitude longitude:(double)longitude 
-
+```objc
+-(EDSunriseSet)initWithDate:(NSDate*)date
+                   timezone:(NSTimeZone*)timezone
+                   latitude:(double)latitude
+                  longitude:(double)longitude
+```
  
- or you can use the class convience method: 
+or you can use the class convience method: 
 
-    -(EDSunriseSet*)sunrisesetWithDate:(NSDate*)date timezone:(NSTimeZone*)timezone latitude:(double)latitude longitude:(double)longitude
+```objc
+-(EDSunriseSet*)sunrisesetWithDate:(NSDate*)date
+                          timezone:(NSTimeZone*)timezone
+                          latitude:(double)latitude
+                         longitude:(double)longitude
+```
     
 This method returns an `EDSunriseSet` object which can be used to access the following `NSDateComponents` each containing a date, hour, minute, and second:
 
